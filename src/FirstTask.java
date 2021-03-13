@@ -1,11 +1,12 @@
 public class FirstTask {
+    //main method
     public static void main(String[] args) {
       for (int i =1; i<=9; i++){
           printline(i);
       }
 
     }
-
+//print method
     private static void printline(int line){
         String string1 = "-";
         String string2 = ". .";
