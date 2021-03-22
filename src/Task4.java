@@ -14,6 +14,10 @@ public class Task4 {
      (int) and will return converted to days of live (int).
      */
     public static int getdaysoflife(int age) {
+        /*  A leap year is a calendar year that contains an additional day(366).
+         These extra days occur in each year which is an integer multiple of 4,
+         I  calculate that during the given life cycle how many leap years have.
+         */
         int yearscount366 = (age - (age % 4)) / 4;
         int days = yearscount366 * 366 + (age - yearscount366) * 365;
         return days;
@@ -24,8 +28,7 @@ public class Task4 {
      (allows for people older the 18)
       */
     public static boolean isallowedforclub(int age) {
-        boolean isallowed = age >= 18 ? true : false;
-        return isallowed;
+        return age >= 18 ? true : false;
 
     }
 
