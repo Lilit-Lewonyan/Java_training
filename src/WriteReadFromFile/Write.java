@@ -36,7 +36,7 @@ public class Write {
         boolean finish = false;
         String yearOfBirth;
         Scanner scanner = new Scanner(System.in);
-        while (finish == false) {
+        while (!finish) {
             Person person = new Person();
             System.out.println("Enter name:");
             person.setName(scanner.next());
