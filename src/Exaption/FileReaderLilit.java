@@ -12,29 +12,29 @@ public class FileReaderLilit {
 
 
     public static void main(String[] args)  {
-        //File file = new File("/Users/levnyanlilit/Desktop/NPUA");
-//
-//        try {
-//            Scanner scanner  = new Scanner(System.in);
-//            System.out.println("Input first age");
-//            int age1 = scanner.nextInt();
-//            System.out.println("Input second age");
-//            int age2 = scanner.nextInt();
-//            System.out.println(age1/age2);
-//        }catch (InputMismatchException e){
-//            System.out.println("Invalid input");
-//
-//        }catch (ArithmeticException e){
-//            System.out.println("CAn not divided 0");
-//        }
+        File file = new File("/Users/levnyanlilit/Desktop/NPUA");
+
+        try {
+            Scanner scanner  = new Scanner(System.in);
+            System.out.println("Input first age");
+            int age1 = scanner.nextInt();
+            System.out.println("Input second age");
+            int age2 = scanner.nextInt();
+            System.out.println(age1/age2);
+        }catch (InputMismatchException e){
+            System.out.println("Invalid input");
+
+        }catch (ArithmeticException e){
+            System.out.println("CAn not divided 0");
+        }
 
 
-//        try {
-//            FileReader ileReader = new FileReader(file);
-//        }catch (FileNotFoundException e){
-//            System.out.println("File not found");
-//
-//        }
+        try {
+            FileReader ileReader = new FileReader(file);
+        }catch (FileNotFoundException e){
+            System.out.println("File not found");
+
+        }
 
 //        Scanner scanner = new Scanner(System.in);
 //        System.out.println("Input first age");
@@ -63,7 +63,7 @@ public class FileReaderLilit {
         return a/b;
     }
 
-//    public static  int divide2(int a, int b) throws ArithmeticException{
-//        return a/b;
-//    }
+    public static  int divide2(int a, int b) throws ArithmeticException{
+        return a/b;
+    }
 }

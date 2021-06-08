@@ -14,8 +14,8 @@ public class Main {
 //        }
 //
 //        System.out.println("karen");
-
-
+//
+//
 //        int[] ee = {12,111,990};
 //        try {
 //            System.out.println(ee[4]);
@@ -25,9 +25,14 @@ public class Main {
 //        }
 
 
-
+        try {
+            divide(8,22);
+        } catch (MySecondExeption mySecondExeption) {
+            mySecondExeption.printStackTrace();
+        }
 
         //Checked Exeption
+
 
 //try {
 //    System.out.println(divide(12, 99));
@@ -42,21 +47,21 @@ public class Main {
     }
 
 
-//    public  static  int divide(int a, int b) throws MySecondExeption{
-//        if(b==1)
-//            throw new MySecondExeption("impossible MySecondExeption");
-//        return a/b;
-//    }
+    public  static  int divide(int a, int b) throws MySecondExeption{
+        if(b==1)
+           throw new MySecondExeption("impossible MySecondExeption");
+        return a/b;
+    }
 public  static  String  isAdult(int a) {
         assert a<18;
-       // if(a<18)
-          //  throw new MyUncheckedExeption("impossible bsdhbdhcvgdvc ");
+        if(a<18)
+            throw new MyUncheckedExeption("impossible bsdhbdhcvgdvc ");
         return "Blabla";
     }
-//
-//    public  static  int divide2(int a, int b) throws MyExeption{
-//        if(b==2)
-//            throw new MySecondExeption("impossible MyExeption");
-//        return a/b;
-//    }
+
+    public  static  int divide2(int a, int b) throws MyExeption{
+        if(b==2)
+            throw new MySecondExeption("impossible MyExeption");
+        return a/b;
+    }
 }

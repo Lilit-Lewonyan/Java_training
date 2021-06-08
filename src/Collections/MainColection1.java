@@ -1,15 +1,18 @@
 package Collections;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Random;
+import java.util.*;
 
 public class MainColection1 {
     public static void main(String[] args) {
-        List<Integer> myArrayList = new ArrayList<>();
-        setRandomValus(myArrayList, 50);
-        System.out.println(myArrayList);
-        printnNotODD(myArrayList);
+//        List<Integer> myArrayList = new ArrayList<>();
+//        setRandomValus(myArrayList, 50);
+//        System.out.println(myArrayList);
+//        printnNotODD(myArrayList);
+        Map<String,String> mard = new HashMap<>();
+        mard.put("anun","Arman");
+        mard.put("azganun","Ayvazyan");
+        System.out.println(mard.get("anun"));
+
 
     }
 
